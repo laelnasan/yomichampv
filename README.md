@@ -21,7 +21,7 @@ Just copy the script to the proper folder in your mpv installation. In
 Unix systems it should be
 ```
 cd ~/.config/mpv/scripts/
-wget 
+wget https://raw.githubusercontent.com/laelnasan/yomichampv/master/yomichampv.lua
 ```
 
 ## License
