@@ -1,6 +1,6 @@
 # yomichampv
 A simple script that enables mpv to work with Yomichan
-![](giphy.mp4)
+![](https://media1.giphy.com/media/MCS5hVmcZ4JqLM28a6/giphy.gif)
 
 ## Getting Started
 
