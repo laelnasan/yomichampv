@@ -28,4 +28,4 @@ wget https://raw.githubusercontent.com/laelnasan/yomichampv/master/yomichampv.lu
 
 ## License
 
-This project is licensed under the BSD-3 clause License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details
