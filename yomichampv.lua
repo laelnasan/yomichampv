@@ -4,9 +4,19 @@
 --
 -- default keybinding to start/stop: Y
 
--- TODO: make it portable
-local clipboard = 'xsel -z -b'
-local running = false
+-- verify which command to use
+local clipboard
+if package.config:sub(1,1) == '\\' then -- Windows
+	clipboard = 'clip.exe'
+elseif os.execute('xsel -h > /dev/null 2>&1') then
+	clipboard = 'xsel -z -b'
+elseif os.execute('xclip -h > /dev/null 2>&1') then
+	clipboard = 'xclip -i -selection clipboard'
+elseif pcall(function () io.popen('pbcopy'):close() end) then
+	clipboard = 'pbcopy'
+end
+
+local running
 
 local function toclipboard(name, value)
 	if running and type(value) == "string" then
@@ -35,7 +45,7 @@ local function get_active_subtrack ()
 end
 
 local function start_stop()
-	if running == true then
+	if running then
 		stop()
 		mp.command('show-text "Quitting Yomichampv..."')
 	else
