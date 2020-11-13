@@ -15,7 +15,7 @@ the clipboard
 
 - mpv https://mpv.io/
 - Yomichan https://foosoft.net/projects/yomichan/index.html
-- xsel (only linux systems supported for now...)
+- [Linux/BSD/etc only] xsel or xclip, Windows and Mac are fine
 
 ### Installing
 
