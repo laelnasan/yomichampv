@@ -1,5 +1,5 @@
 # Yomichampv
-A simple script that enables mpv to work with Yomichan
+A simple script that enables mpv to work with Yomichan by copying subtitles to the clipboard
 
 ![](https://media1.giphy.com/media/MCS5hVmcZ4JqLM28a6/giphy.gif)
 
@@ -9,7 +9,8 @@ If you already have mpv and Yomichan installed just copy the lua script
 to your mpv ``scripts`` directory.
 
 The default key binding is 'y', the script simply copies the subtitle to
-the clipboard
+the clipboard, so you must select the _clipboard monitor_ option in the 
+Yomichan Search page
 
 ### Prerequisites
 
